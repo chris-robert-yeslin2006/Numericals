@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorConnect - Book Live Sessions with Expert Mentors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/placeholder.svg?height=40&width=40" alt="MentorConnect Logo" id="logo">
+                <span>MentorConnect</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#mentors">Mentors</a></li>
+                <li><a href="#bookings">Bookings</a></li>
+            </ul>
+            <button id="loginBtn">Login</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Connect with Expert Mentors</h1>
+            <p>Book live sessions and accelerate your learning journey</p>
+            <button id="ctaBtn">Find a Mentor</button>
+        </section>
+
+        <section id="about">
+            <h2>About MentorConnect</h2>
+            <p>MentorConnect is your gateway to personalized learning experiences. Our platform connects you with industry experts who are passionate about sharing their knowledge and guiding you towards success.</p>
+        </section>
+
+        <section id="mentors">
+            <h2>Our Top Mentors</h2>
+            <div class="mentor-grid">
+                <div class="mentor-card">
+                    <img src="/placeholder.svg?height=150&width=150" alt="John Doe">
+                    <h3>John Doe</h3>
+                    <p>Web Development Expert</p>
+                </div>
+                <div class="mentor-card">
+                    <img src="/placeholder.svg?height=150&width=150" alt="Jane Smith">
+                    <h3>Jane Smith</h3>
+                    <p>UX/UI Design Specialist</p>
+                </div>
+                <div class="mentor-card">
+                    <img src="/placeholder.svg?height=150&width=150" alt="Mike Johnson">
+                    <h3>Mike Johnson</h3>
+                    <p>Data Science Guru</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="bookings">
+            <h2>How Booking Works</h2>
+            <ol>
+                <li>Browse our list of expert mentors</li>
+                <li>Select a mentor that matches your needs</li>
+                <li>Choose an available time slot</li>
+                <li>Book your session and make a payment</li>
+                <li>Attend your live mentoring session</li>
+            </ol>
+            <button id="bookNowBtn">Book Now</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MentorConnect. All rights reserved.</p>
+    </footer>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
